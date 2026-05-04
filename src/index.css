@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Girassol&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+@font-face {
+  font-family: barberChop;
+  src: url("../src/assets/fonts/BarberChop.otf");
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-Girassol: "Girassol", "serif";
+  --font-LeagueSpartan: "League Spartan", "sans-serif";
+  --font-barberChop: "barberChop", "times-new-roman";
+
+  --animate-tl: tl 2s ease-in-out forwards;
+  --animate-br: br 2.5s ease-in-out forwards;
+  --animate-bl: bl 3s ease-in-out forwards;
+
+  --animate-bgLogo: bgLogo 1s ease-in-out forwards;
+
+  @keyframes bgLogo {
+    0% {
+      transform: translateY(-20px);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes tl {
+    0% {
+      transform: translateX(-50px) translateY(-50px) rotate(-20deg);
+    }
+    50% {
+      transform: translateX(30px) translateY(30px);
+    }
+    100% {
+      transform: translate(0) translate(0) rotate(0deg);
+    }
+  }
+
+  @keyframes br {
+    0% {
+      transform: translateX(50px) translateY(50px);
+    }
+    50% {
+      transform: translateX(-50px) translateY(-50px);
+    }
+    100% {
+      transform: translate(0) translate(0);
+    }
+  }
+
+  @keyframes bl {
+    0% {
+      transform: translateX(-50px) translateY(50px) rotate(0deg);
+    }
+    100% {
+      transform: translate(0) translate(0) rotate(0deg);
+    }
+  }
+}
