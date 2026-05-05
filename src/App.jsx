@@ -37,7 +37,7 @@ function App() {
           src={pattern}
           alt="Pattern"
           width="100%"
-          className="z-0 fixed top-0 left-0"
+          className="w-full z-0 fixed top-0 left-0"
         />
         <h1 className="uppercase text-white font-Girassol text-6xl tracking-wider mt-5">
           Graduation
@@ -45,15 +45,33 @@ function App() {
         <h2 className="uppercase text-white font-Girassol text-2xl tracking-wider">
           ceremony
         </h2>
-        <img src={vin} alt="vin" className="opacity-40 my-5" />
-        <img src={hat} alt="hat" width="50%" className="z-1 fixed top-50" />
-        <img src={wave} alt="wave" width="50%" className="fixed opacity-50 top-50 z-1" />
-        <img src={radial} alt="radial" width="70%" className="fixed opacity-50 top-15" />
+        <div className="relative my-5">
+          <img src={vin} alt="vin" className="opacity-40" />
+          <img src={hat} alt="hat" width="100%" className="z-1 absolute top-0" />
+          <img
+            src={wave}
+            alt="wave"
+            width="100%"
+            className="absolute opacity-50 top-0 z-1"
+          />
+          <img
+            src={radial}
+            alt="radial"
+            width="100%"
+            className="absolute -top-20"
+          />
+        </div>
         <h1 className="font-barberChop transform-[perspective(100px)_rotateX(10deg)_skewX(2deg)] tracking-wider text-[#f4b04b] text-shadow-black text-shadow-lg text-8xl z-2 ml-5">
           vintavis
         </h1>
-        <footer className="flex items-center">
-          <div>
+        <footer className="grid grid-cols-3 border-red-500 border-2 items-center w-full h-fit">
+          <img
+            src={bl}
+            alt="BL"
+            width="100%"
+            className="border-2 border-red-500 animate-bl -bottom-20 -left-20"
+          />
+          <div className="border-2 border-blue-500 flex flex-col items-center">
             <p className="text-white text-center uppercase font-LeagueSpartan font-bold text-2xl">
               12 mei 2026
             </p>
@@ -61,19 +79,13 @@ function App() {
               man insan cendekia kota kendari
             </p>
           </div>
+          <img
+            src={br}
+            alt="BR"
+            width="100%"
+            className="border-2 justify-self-end border-red-500 animate-br -bottom-15 -right-20"
+          />
         </footer>
-        <img
-          src={bl}
-          alt="BL"
-          width="40%"
-          className="fixed animate-bl -bottom-20 -left-20"
-        />
-        <img
-          src={br}
-          alt="BR"
-          width="40%"
-          className="fixed animate-br -bottom-10 -rotate-20 -right-15"
-        />
       </main>
     </>
   );
