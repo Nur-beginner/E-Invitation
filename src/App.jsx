@@ -1,4 +1,5 @@
 import "./App.css";
+import navbar from "./bNavbar.jsx";
 import pattern from "./assets/pattern.svg";
 import kem from "./assets/kem.svg";
 import ic from "./assets/ic.svg";
@@ -94,6 +95,7 @@ function App() {
           className="fixed animate-br bottom-0 -right-15"
         />
       </main>
+      {navbar()}
     </>
   );
 }
