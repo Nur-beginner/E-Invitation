@@ -17,6 +17,7 @@
   --animate-br: br 2.5s ease-in-out forwards;
   --animate-bl: bl 3s ease-in-out forwards;
   --animate-bgLogo: bgLogo 1s ease-in-out forwards;
+  --animate-book: book 2s ease-in-out forwards;
 
   --color-primary: #021827;
   --color-secondary: #031a2a;
@@ -67,5 +68,15 @@
   }
   100% {
     transform: translate(0) translate(0) rotate(0deg);
+  }
+}
+@keyframes book {
+  0% {
+    transform: translateY(50px) rotateX(-90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotateX(0deg);
+    opacity: 1;
   }
 }

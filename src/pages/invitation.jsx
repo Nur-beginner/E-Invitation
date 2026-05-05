@@ -5,15 +5,17 @@ import tborder from "../assets/TBorder.webp";
 function Detail() {
   return (
     <>
-      <main className="min-h-screen bg-primary flex flex-col items-center justify-between">
-        <header className="h-20 relative w-full">
-          <img
-            src={tborder}
-            alt="Text Border"
-            width="70%"
-            className="absolute top-0 left-15"
-          />
-          <h1 className="absolute top-5 text-shadow-lg text-shadow-black text-white font-bold uppercase font-barberChop tracking-wider text-3xl left-30.5">
+      <main className="overflow-hidden min-h-screen bg-primary flex flex-col items-center justify-between">
+        <header className="h-20 flex items-center justify-center  w-full">
+          <div className="absolute left-10 w-full">
+            <img
+              src={tborder}
+              alt="Text Border"
+              width="80%"
+              className=""
+            />
+          </div>
+          <h1 className="text-shadow-lg text-shadow-black text-white font-bold uppercase font-barberChop tracking-wider text-3xl">
             invitation
           </h1>
         </header>
@@ -23,7 +25,7 @@ function Detail() {
           width="100%"
           className="fixed md:w-screen h-screen top-0 left-0 object-cover"
         />
-        <div className="text-white border-2 rounded-lg mx-5 text- p-5 flex flex-col">
+        <div className="text-white border-2 rounded-lg mx-5 md:text-lg p-5 flex flex-col">
           <p>
             Puji syukur kita panjatkan ke hadirat Allah SWT. atas limpahan
             rahmat, nikmat, dan karunia-Nya kepada kita semua. Shalawat serta
@@ -38,7 +40,7 @@ function Detail() {
             mengundang Bapak/Ibu untuk berkenan menghadiri kegiatan tersebut
           </p>
         </div>
-        <img src={book} alt="Book" width="70%" className="" />
+        <img src={book} alt="Book" width="70%" className="animate-book" />
       </main>
     </>
   );
