@@ -1,6 +1,7 @@
 import book from "../assets/book.svg";
 import border from "../assets/border.webp";
 import tborder from "../assets/TBorder.webp";
+import Navbar from "../Navbar.jsx";
 
 function Detail() {
   return (
@@ -42,6 +43,7 @@ function Detail() {
         </div>
         <img src={book} alt="Book" width="70%" className="animate-book" />
       </main>
+      <Navbar />
     </>
   );
 }
