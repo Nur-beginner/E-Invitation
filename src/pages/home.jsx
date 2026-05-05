@@ -9,7 +9,7 @@ import hat from "../assets/hat.webp";
 import wave from "../assets/wave.webp";
 import radial from "../assets/radialYellow.webp";
 import vin from "../assets/vinLogo-removebg-preview.webp";
-import Navbar from "../bNavbar.jsx";
+import Navbar from "../Navbar.jsx";
 
 function Home() {
   return (
