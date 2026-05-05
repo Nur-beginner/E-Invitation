@@ -14,12 +14,12 @@ import vin from "./assets/vinLogo-removebg-preview.webp";
 function App() {
   return (
     <>
-      <main className="min-h-screen overflow-hidden bg-[#021827] flex flex-col items-center">
+      <main className="min-h-screen overflow-hidden bg-primary flex flex-col items-center">
         <img
           src={tl}
           alt="TL"
           width="40%"
-          className="absolute animate-tl -top-8 -rotate-20 -left-15"
+          className="fixed animate-tl -top-5 -rotate-20 -left-15"
         />
 
         <header className="bg-[#bd8c1c] animate-bgLogo w-50 h-10 rounded-b-xl flex flex-row-reverse justify-center items-center">
@@ -31,8 +31,9 @@ function App() {
           src={pattern}
           alt="Pattern"
           width="100%"
-          className="w-full z-0 fixed top-0 left-0"
+          className="w-screen h-screen fixed top-0 left-0 object-cover"
         />
+
         <div className="relative w-full ">
           <h1 className="uppercase text-white text-center font-Girassol text-6xl tracking-wider mt-5">
             Graduation
@@ -72,7 +73,7 @@ function App() {
         <h1 className="font-barberChop transform-[perspective(100px)_rotateX(10deg)_skewX(2deg)_translateX(5px)] tracking-wider text-[#f4b04b] text-shadow-black text-shadow-lg text-8xl z-2 text-center p-5">
           vintavis
         </h1>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col justify-center items-center">
           <p className="text-white text-center uppercase font-LeagueSpartan font-bold text-2xl">
             12 mei 2026
           </p>
@@ -80,20 +81,18 @@ function App() {
             man insan cendekia kota kendari
           </p>
         </div>
-        <div className="relative w-full">
-          <img
-            src={bl}
-            alt="BL"
-            width="40%"
-            className="absolute animate-bl -bottom-15 -left-10"
-          />
-          <img
-            src={br}
-            alt="BR"
-            width="40%"
-            className="absolute animate-br -bottom-15 -right-20"
-          />
-        </div>
+        <img
+          src={bl}
+          alt="BL"
+          width="40%"
+          className="fixed animate-bl bottom-0 -left-15"
+        />
+        <img
+          src={br}
+          alt="BR"
+          width="40%"
+          className="fixed animate-br bottom-0 -right-15"
+        />
       </main>
     </>
   );

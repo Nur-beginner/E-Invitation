@@ -15,8 +15,9 @@
   --animate-tl: tl 2s ease-in-out forwards;
   --animate-br: br 2.5s ease-in-out forwards;
   --animate-bl: bl 3s ease-in-out forwards;
-
   --animate-bgLogo: bgLogo 1s ease-in-out forwards;
+
+  --color-primary: #021827;
 
   @keyframes bgLogo {
     0% {
