@@ -27,7 +27,7 @@ function Routing() {
       ],
       routeWhileDragging: false,
       draggableWaypoints: false,
-
+      addWaypoints: false,
       createMarker: function (i, wp) {
         return L.marker(wp.latLng, { icon: customIcon });
       },
