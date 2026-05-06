@@ -2,7 +2,7 @@ import "./App.css";
 import Home from "./pages/home.jsx";
 import Detail from "./pages/invitation.jsx";
 import TimeEvent from "./pages/time.jsx";
-import Location from "./pages/location.jsx";
+import Location from "./components/location.jsx";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
