@@ -42,6 +42,7 @@ function Home() {
             src={spark}
             alt="Spark"
             width="40%"
+            loading="lazy"
             className="absolute animate-pulse -top-4 right-17.5"
           />
           <h2 className="uppercase text-white text-center font-Girassol text-2xl tracking-wider">
@@ -50,7 +51,7 @@ function Home() {
         </div>
 
         <div className="relative my-5">
-          <img src={vin} alt="vin" className="opacity-40" />
+          <img src={vin} alt="vin" loading="lazy" className="opacity-40" />
           <img
             src={hat}
             alt="hat"
@@ -67,6 +68,7 @@ function Home() {
             src={radial}
             alt="radial"
             width="100%"
+            loading="lazy"
             className="absolute -top-20"
           />
         </div>

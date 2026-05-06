@@ -43,7 +43,7 @@ function Location() {
   const position = [-4.0601, 122.47666];
 
   return (
-    <main className="bg-linear-to-br from-primary via-primary/90 to-primary/50 min-h-screen overflow-hidden">
+    <div className="bg-linear-to-br from-primary via-primary/90 to-primary/50 min-h-screen overflow-hidden">
       <div className="w-full h-150 rounded-xl overflow-hidden">
         <MapContainer center={position} zoom={13} className="w-full h-full">
           <TileLayer
@@ -56,7 +56,7 @@ function Location() {
       </div>
 
       <Navbar />
-    </main>
+    </div>
   );
 }
 
