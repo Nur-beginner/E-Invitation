@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Navbar from "../Navbar.jsx";
 
 function TimeEvent() {
-  const targetDate = new Date("2026-05-12T00:00:00").getTime();
+  const targetDate = new Date("2026-05-12T07:30:00").getTime();
 
   const [time, setTime] = useState({
     days: "00",
@@ -38,21 +38,20 @@ function TimeEvent() {
 
   return (
     <div className="bg-linear-to-br from-primary via-primary/90 to-primary/50 min-h-screen text-white overflow-hidden">
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12">
+      <div className="flex flex-col items-center justify-center min-h-screen px-4 py-10">
         {/* header */}
         <div className="text-center mb-12">
           <h1 className="text-5xl font-Girassol tracking-widest font-bold uppercase">
             Graduation Ceremony
           </h1>
-          <p className="text-white/70">Waktu tersisa menuju kelulusan</p>
+          <strong className="text-white/70">07:30 WITA - Selesai</strong>
         </div>
-
         {/* countdown */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-4xl">
           <Box label="Hari" value={time.days} />
           <Box label="Jam" value={time.hours} />
           <Box label="Menit" value={time.minutes} />
-          <Box label="Detik" value={time.seconds} pulse />
+          <Box label="Detik" value={time.seconds} />
         </div>
       </div>
 
@@ -61,11 +60,11 @@ function TimeEvent() {
   );
 }
 
-function Box({ label, value, pulse }) {
+function Box({ label, value}) {
   return (
     <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 text-center">
       <div
-        className={`text-5xl font-bold text-[#f4b04b] ${pulse ? "animate-pulse" : ""}`}
+        className={`text-5xl font-bold text-[#f4b04b]`}
       >
         {value}
       </div>

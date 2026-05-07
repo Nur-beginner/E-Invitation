@@ -14,12 +14,11 @@ import Navbar from "../Navbar.jsx";
 function Home() {
   return (
     <>
-      <main className="min-h-screen overflow-hidden bg-primary flex flex-col items-center">
+      <main className="min-h-screen md:overflow-visible overflow-hidden bg-primary flex flex-col md:justify-between items-center">
         <img
           src={tl}
           alt="TL"
-          width="40%"
-          className="absolute animate-tl -top-5 -rotate-20 -left-15"
+          className="absolute w-[40%] md:w-[20%] animate-tl -top-5 -rotate-20 -left-15"
         />
 
         <header className="bg-[#bd8c1c] animate-bgLogo w-50 h-10 rounded-b-xl flex flex-row-reverse justify-center items-center">
@@ -70,28 +69,26 @@ function Home() {
             className="absolute -top-20"
           />
         </div>
-        <h1 className="font-barberChop transform-[perspective(100px)_rotateX(10deg)_skewX(2deg)_translateX(5px)] tracking-wider text-[#f4b04b] text-shadow-black text-shadow-lg text-8xl z-2 text-center p-5">
+        <h1 className="font-barberChop transform-[perspective(100px)_rotateX(10deg)_skewX(2deg)_translateX(5px)] tracking-wider text-shine text-shadow-black text-shadow-lg text-8xl z-2 text-center p-5">
           vintavis
         </h1>
-        <div className="flex flex-col justify-center items-center">
-          <p className="text-white text-center uppercase font-LeagueSpartan font-bold text-2xl">
+        <div className="flex text-white text-center uppercase flex-col justify-center font-LeagueSpartan font-bold text-2xl items-center md:text-3xl mb-5">
+          <p>
             12 mei 2026
           </p>
-          <p className="text-white uppercase font-LeagueSpartan font-bold text-2xl w-75 text-center">
+          <p className="md:w-100 w-75">
             man insan cendekia kota kendari
           </p>
         </div>
         <img
           src={bl}
           alt="BL"
-          width="40%"
-          className="fixed animate-bl bottom-0 -left-15"
+          className="fixed w-[40%] md:w-[30%] lg:w-[18%] animate-bl bottom-0 -left-15"
         />
         <img
           src={br}
           alt="BR"
-          width="40%"
-          className="fixed animate-br bottom-0 -right-15"
+          className="fixed w-[40%] md:w-[30%] lg:w-[20%] animate-br bottom-0 -right-15"
         />
       </main>
       <Navbar />

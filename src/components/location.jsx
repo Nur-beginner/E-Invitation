@@ -43,8 +43,11 @@ function Location() {
   const position = [-4.0601, 122.47666];
 
   return (
-    <div className="bg-linear-to-br from-primary via-primary/90 to-primary/50 min-h-screen overflow-hidden">
-      <div className="w-full h-150 rounded-xl overflow-hidden">
+    <div className="bg-linear-to-br flex flex-col justify-between items-center from-primary via-primary/90 to-primary/50 min-h-screen overflow-hidden">
+      <h1 className="bg-shine/70 w-fit p-3 font-LeagueSpartan font-bold tracking-widest text-white rounded-b-lg text-center uppercase">
+        rute perjalanan
+      </h1>
+      <div className="w-full h-130 rounded-xl overflow-hidden">
         <MapContainer center={position} zoom={13} className="w-full h-full">
           <TileLayer
             attribution="&copy; OpenStreetMap"

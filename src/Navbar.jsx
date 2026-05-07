@@ -23,7 +23,7 @@ function Navbar() {
                 to={item.path}
                 className={`flex flex-col items-center transition-all ${
                   isActive
-                    ? "text-white bg-white/20 rounded-2xl p-3"
+                    ? "text-white bg-shine rounded-2xl p-3"
                     : "text-gray-300"
                 }`}
               >
