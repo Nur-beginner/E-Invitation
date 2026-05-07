@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="fixed bottom-0 z-999 left-0 right-0 bg-primary px-10 py-2">
+      <nav className="fixed md:sticky bottom-0 z-999 left-0 right-0 bg-primary px-10 py-2">
         <div className="max-w-md mx-auto h-16 flex justify-between items-center">
           {items.map((item) => {
             const isActive = location.pathname === item.path;
