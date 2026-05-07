@@ -18,23 +18,27 @@ function Detail() {
           className="absolute w-full md:w-screen h-screen top-0 left-0 object-cover"
         />
         <div className="text-white border-4 md:w-[80%] lg:w-[60%] lg:my-10 border-double border-shine rounded-lg mx-5 md:text-3xl lg:text-xl p-5 flex flex-col">
-          <p className="z-1">
-            Assalamualaikum Warahmatullahi Wabarakatuh Puji syukur kita
-            panjatkan ke hadirat Allah SWT atas limpahan rahmat, nikmat, dan
-            karunia-Nya kepada kita semua. Shalawat serta salam semoga
-            senantiasa tercurah kepada Nabi Muhammad SAW, beserta keluarga,
-            sahabat, dan para pengikutnya hingga akhir zaman. Aamiin. Sehubungan
-            dengan akan diselenggarakannya kegiatan Graduation Ceremony Kelas
-            XII Angkatan 8 MAN Insan Cendekia Kota Kendari, dengan hormat kami
-            selaku Badan Pengurus Harian Angkatan 8 mengundang Bapak/Ibu Orang
-            Tua/Wali untuk berkenan menghadiri kegiatan tersebut yang insya
-            Allah akan dilaksanakan pada:
+          <p className="italic capitalize z-1">
+            Assalamualaikum Warahmatullahi Wabarakatuh
           </p>
+          <p className="z-1">
+            Puji syukur kita panjatkan ke hadirat Allah SWT. atas limpahan
+            rahmat, nikmat, dan karunia-Nya kepada kita semua. Shalawat serta
+            salam semoga senantiasa tercurah kepada Nabi Muhammad SAW., beserta
+            keluarga, sahabat, dan para pengikutnya hingga akhir zaman. Aamiin.
+          </p>
+          <br />
           <img
             src={vin}
             alt="VIN Logo"
             className="absolute opacity-50 right-[50%] left-[50%] transform -translate-x-1/2 md:w-100 md:opacity-40"
           />
+          <p className="z-1">
+            Sehubungan dengan akan diselenggarakannya kegiatan Graduation
+            Ceremony Kelas XII Angkatan 8 MAN Insan Cendekia Kota Kendari,
+            dengan hormat kami selaku Badan Pengurus Harian Angkatan 8
+            mengundang Bapak/Ibu untuk berkenan menghadiri kegiatan tersebut.
+          </p>
         </div>
         <img
           src={book}
