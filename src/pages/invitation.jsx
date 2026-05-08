@@ -22,10 +22,8 @@ function Detail() {
             Assalamualaikum Warahmatullahi Wabarakatuh
           </p>
           <p className="z-1">
-            Puji syukur kita panjatkan ke hadirat Allah SWT. atas limpahan
-            rahmat, nikmat, dan karunia-Nya kepada kita semua. Shalawat serta
-            salam semoga senantiasa tercurah kepada Nabi Muhammad SAW., beserta
-            keluarga, sahabat, dan para pengikutnya hingga akhir zaman. Aamiin.
+            Assalamualaikum Warahmatullahi Wabarakatuh
+Puji syukur kita panjatkan ke hadirat Allah SWT atas limpahan rahmat, nikmat, dan karunia-Nya kepada kita semua. Shalawat serta salam semoga senantiasa tercurah kepada Nabi Muhammad SAW, beserta keluarga, sahabat, dan para pengikutnya hingga akhir zaman. Aamiin.
           </p>
           <br />
           <img
@@ -34,10 +32,7 @@ function Detail() {
             className="absolute opacity-50 right-[50%] left-[50%] transform -translate-x-1/2 md:w-100 md:opacity-40"
           />
           <p className="z-1">
-            Sehubungan dengan akan diselenggarakannya kegiatan Graduation
-            Ceremony Kelas XII Angkatan 8 MAN Insan Cendekia Kota Kendari,
-            dengan hormat kami selaku Badan Pengurus Harian Angkatan 8
-            mengundang Bapak/Ibu untuk berkenan menghadiri kegiatan tersebut.
+            Sehubungan dengan akan diselenggarakannya kegiatan Graduation Ceremony Kelas XII Angkatan 8 MAN Insan Cendekia Kota Kendari, dengan hormat kami selaku Badan Pengurus Harian Angkatan 8 mengundang Bapak/Ibu Orang Tua/Wali untuk berkenan menghadiri kegiatan tersebut.
           </p>
         </div>
         <img
